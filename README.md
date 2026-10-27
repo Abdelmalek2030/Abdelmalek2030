@@ -33,7 +33,7 @@ Reference-grade suite of zero-dependency POSIX developer utilities engineered wi
 
 ### [docker-prune-daemon](https://github.com/Abdelmalek2030/docker-prune-daemon)
 [![CI Matrix & Quality Gate](https://github.com/Abdelmalek2030/docker-prune-daemon/actions/workflows/ci.yml/badge.svg)](https://github.com/Abdelmalek2030/docker-prune-daemon/actions/workflows/ci.yml)
-[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/Abdelmalek2030/docker-prune-daemon/badge)](https://securityscorecards.dev/projects/github.com/Abdelmalek2030/docker-prune-daemon)
+[![GoReleaser](https://img.shields.io/badge/release-GoReleaser-blue?style=flat&logo=goreleaser)](https://github.com/goreleaser/goreleaser)
 [![Go 100%](https://img.shields.io/badge/Language-Go%20100%25-blue.svg)](https://github.com/Abdelmalek2030/docker-prune-daemon)
 
 Reference-grade, zero-dependency Go background daemon engineered for autonomous Docker disk space reclaim, kernel-level `syscall.Statfs` watermark auditing, systemd cgroups v2 (`MemoryMax=32M`) resource sandboxing, and cryptographic SLSA release provenance.
