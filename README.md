@@ -6,6 +6,7 @@ Focused on low-overhead background daemon systems, zero-dependency POSIX CLI uti
 [![GitHub Sponsors](https://img.shields.io/badge/Sponsor-%E2%99%A5-ea4aaa?style=flat&logo=githubsponsors)](https://github.com/sponsors/Abdelmalek2030)
 [![ShellCheck](https://img.shields.io/badge/Lint-ShellCheck%20Strict-brightgreen.svg)](#core-engineering-principles)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
+[![GitHub Sponsors Target](https://img.shields.io/badge/Support-GitHub%20Sponsors-ea4aaa?style=flat&logo=githubsponsors&logoColor=white)](https://github.com/sponsors/Abdelmalek2030)
 
 ---
 
@@ -31,7 +32,11 @@ Reference-grade suite of zero-dependency POSIX developer utilities engineered wi
 - *Infrastructure*: Complete section 1 UNIX manual pages (`man/`), AST markdownlinting, hermetic sandboxing, and execution latency benchmarking.
 
 ### [docker-prune-daemon](https://github.com/Abdelmalek2030/docker-prune-daemon)
-Lightweight background daemon written in Go designed for automated disk space reclaim, dangling image cleanup, and production systemd service management.
+[![CI Matrix & Quality Gate](https://github.com/Abdelmalek2030/docker-prune-daemon/actions/workflows/ci.yml/badge.svg)](https://github.com/Abdelmalek2030/docker-prune-daemon/actions/workflows/ci.yml)
+[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/Abdelmalek2030/docker-prune-daemon/badge)](https://securityscorecards.dev/projects/github.com/Abdelmalek2030/docker-prune-daemon)
+[![Go 100%](https://img.shields.io/badge/Language-Go%20100%25-blue.svg)](https://github.com/Abdelmalek2030/docker-prune-daemon)
+
+Reference-grade, zero-dependency Go background daemon engineered for autonomous Docker disk space reclaim, kernel-level `syscall.Statfs` watermark auditing, systemd cgroups v2 (`MemoryMax=32M`) resource sandboxing, and cryptographic SLSA release provenance.
 
 ### [env-vault-cli](https://github.com/Abdelmalek2030/env-vault-cli)
 Zero-dependency secure CLI utility built with native Node.js crypto modules for enterprise-grade AES-256-GCM environment file encryption and synchronization.
@@ -48,18 +53,3 @@ Static Analysis   ──► ShellCheck (Aggressive Rules: quote-safe-variables, 
 Testing Suite     ──► Zero-dependency behavioral assertions & isolated disposable mktemp sandboxes
 Documentation     ──► Formal Architecture Specifications, Threat Models, and native roff man(1) pages
 Distribution      ──► Standalone curl-to-sh bootstrap installer & standardized GNU Makefile
-```
-
----
-
-## 💖 Sponsor & Support
-
-If you find my zero-dependency tooling and infrastructure utilities valuable, consider supporting ongoing independent open-source maintenance:
-
-[![Sponsor Abdelmalek](https://img.shields.io/badge/Sponsor%20on-GitHub%20Sponsors-ea4aaa?style=for-the-badge&logo=githubsponsors)](https://github.com/sponsors/Abdelmalek2030)
-
----
-
-## 📜 License
-
-Released under the [MIT License](https://opensource.org/licenses/MIT).
