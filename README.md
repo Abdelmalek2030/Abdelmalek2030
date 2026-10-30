@@ -1,55 +1,54 @@
+<div align="center">
+
 # Abdelmalek
+### Systems & Developer Tooling Architect
 
-**Systems & Developer Tooling Engineer**  
-Focused on low-overhead background daemon systems, zero-dependency POSIX CLI utilities, and developer productivity tooling across Linux and cloud infrastructure.
+<p align="center">
+  <img src="https://img.shields.io/badge/Focus-Systems_%26_Low_Overhead_Daemons-000000?style=for-the-badge&logo=gnu-bash&logoColor=white" />
+  <img src="https://img.shields.io/badge/Architecture-Zero_Dependency_%2F_POSIX-101010?style=for-the-badge&logo=linux&logoColor=white" />
+  <img src="https://img.shields.io/badge/Security-Reference_Grade_Cryptosystems-020202?style=for-the-badge&logo=securityscorecard&logoColor=white" />
+</p>
 
-[![GitHub Sponsors](https://img.shields.io/badge/Sponsor-%E2%99%A5-ea4aaa?style=flat&logo=githubsponsors)](https://github.com/sponsors/Abdelmalek2030)
-[![ShellCheck](https://img.shields.io/badge/Lint-ShellCheck%20Strict-brightgreen.svg)](#core-engineering-principles)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
-[![GitHub Sponsors Target](https://img.shields.io/badge/Support-GitHub%20Sponsors-ea4aaa?style=flat&logo=githubsponsors&logoColor=white)](https://github.com/sponsors/Abdelmalek2030)
+*Engineering low-overhead daemon systems, zero-dependency POSIX CLI utilities, and deterministic developer productivity infrastructure across Linux and cloud environments.*
 
----
+[<img src="https://img.shields.io/badge/GitHub-devtools--hub-181717?style=flat-square&logo=github">](https://github.com/Abdelmalek2030/devtools-hub)
+[<img src="https://img.shields.io/badge/SecOps-env--vault--cli-007EC6?style=flat-square&logo=gnupg">](https://github.com/Abdelmalek2030/env-vault-cli)
+[<img src="https://img.shields.io/badge/CI%2FCD-env--vault--action-2088FF?style=flat-square&logo=githubactions">](https://github.com/Abdelmalek2030/env-vault-action)
+[<img src="https://img.shields.io/badge/Systems-docker--prune--daemon-00ADD8?style=flat-square&logo=go">](https://github.com/Abdelmalek2030/docker-prune-daemon)
 
-## ⚙️ Core Engineering Principles
-
-- **Minimal Surface Area & Zero Bloat**: Prioritizing zero-dependency or strictly audited architectures to eliminate supply-chain risk and binary bloat.
-- **Unix Philosophy & Portability**: Building composable, deterministic tools that strictly conform to standard POSIX `/bin/sh` specifications across Linux, macOS, and BSD.
-- **Resource Predictability**: Bounded memory footprints, atomic kernel primitives (`mkdir(2)` mutexes), and deterministic teardown via signal-safe traps (`SIGTERM`/`SIGKILL`).
-
----
-
-## 🛠️ Featured Open Source Infrastructure
-
-### [devtools-hub](https://github.com/Abdelmalek2030/devtools-hub)
-[![CI Pipeline](https://github.com/Abdelmalek2030/devtools-hub/actions/workflows/ci.yml/badge.svg)](https://github.com/Abdelmalek2030/devtools-hub/actions/workflows/ci.yml)
-[![POSIX 100%](https://img.shields.io/badge/Language-Shell%20100%25-green.svg)](https://github.com/Abdelmalek2030/devtools-hub)
-
-Reference-grade suite of zero-dependency POSIX developer utilities engineered with strict XDG Base Directory compliance:
-- **`clean-ports`**: Port reclaimer with graceful `SIGTERM` teardown and deterministic `--dry-run` inspection.
-- **`xdg-audit`**: Filesystem compliance auditor and storage footprint inspector with strict CI assertion modes.
-- **`sys-doctor`**: Health diagnostics covering kernel architecture, load averages, disk pressure, and zombie processes.
-- **`with-lock`**: Atomic concurrency mutex wrapper using POSIX `mkdir(2)` semantics for cron and CI/CD pipelines.
-- *Infrastructure*: Complete section 1 UNIX manual pages (`man/`), AST markdownlinting, hermetic sandboxing, and execution latency benchmarking.
-
-### [docker-prune-daemon](https://github.com/Abdelmalek2030/docker-prune-daemon)
-[![CI Matrix & Quality Gate](https://github.com/Abdelmalek2030/docker-prune-daemon/actions/workflows/ci.yml/badge.svg)](https://github.com/Abdelmalek2030/docker-prune-daemon/actions/workflows/ci.yml)
-[![GoReleaser](https://img.shields.io/badge/release-GoReleaser-blue?style=flat&logo=goreleaser)](https://github.com/goreleaser/goreleaser)
-[![Go 100%](https://img.shields.io/badge/Language-Go%20100%25-blue.svg)](https://github.com/Abdelmalek2030/docker-prune-daemon)
-
-Reference-grade, zero-dependency Go background daemon engineered for autonomous Docker disk space reclaim, kernel-level `syscall.Statfs` watermark auditing, systemd cgroups v2 (`MemoryMax=32M`) resource sandboxing, and cryptographic SLSA release provenance.
-
-### [env-vault-cli](https://github.com/Abdelmalek2030/env-vault-cli)
-Zero-dependency secure CLI utility built with native Node.js crypto modules for enterprise-grade AES-256-GCM environment file encryption and synchronization.
-
-### [env-vault-action](https://github.com/Abdelmalek2030/env-vault-action)
-Official GitHub Action companion for zero-dependency `.env.vault` decryption and direct injection of secrets into `$GITHUB_ENV` with automated CI log masking.
+</div>
 
 ---
 
-## 📈 Quality & Tooling Standards
+### 🏛️ Core Engineering Principles
 
-```text
-Static Analysis   ──► ShellCheck (Aggressive Rules: quote-safe-variables, check-unassigned-uppercase)
-Testing Suite     ──► Zero-dependency behavioral assertions & isolated disposable mktemp sandboxes
-Documentation     ──► Formal Architecture Specifications, Threat Models, and native roff man(1) pages
-Distribution      ──► Standalone curl-to-sh bootstrap installer & standardized GNU Makefile
+* **Minimal Surface Area & Zero Bloat:** Prioritizing zero-dependency or strictly audited architectures to eliminate supply-chain risk and binary bloat.
+* **Unix Philosophy & Portability:** Building composable, deterministic tools that strictly conform to standard POSIX interface specifications across Linux, macOS, and BSD.
+* **Resource Predictability:** Bounded memory footprints, atomic kernel primitives (`flock(2)` mutexes), and deterministic teardown via signal-safe traps (`SIGTERM`/`SIGKILL`).
+* **Cryptographic Rigor:** Enforcing authenticated encryption (`AES-256-GCM`), memory hygiene (`buf.fill(0)` explicit wiping), and memory-hard key derivation (`scrypt` per RFC 7914).
+
+---
+
+### 🚀 Flagship Developer Tooling Infrastructure
+
+| Repository | Stack | Architecture & Security Philosophy |
+| :--- | :---: | :--- |
+| **[`env-vault-cli`](https://github.com/Abdelmalek2030/env-vault-cli)** | `JavaScript` `Node.js` | Reference-grade zero-dependency CLI utilizing native `node:crypto` primitives for enterprise AES-256-GCM `.env` secret encryption, scrypt key rotation, and atomic persistence. |
+| **[`env-vault-action`](https://github.com/Abdelmalek2030/env-vault-action)** | `GitHub Actions` `Node.js` | Official zero-dependency companion action for secure in-memory decryption and secret injection into `$GITHUB_ENV` with automated log redaction (`::add-mask::`). |
+| **[`docker-prune-daemon`](https://github.com/Abdelmalek2030/docker-prune-daemon)** | `Go` `Systemd` | Low-overhead Docker pruning daemon engineered with integrated security auditing, signal-safe execution traps, and automated release pipelines. |
+| **[`devtools-hub`](https://github.com/Abdelmalek2030/devtools-hub)** | `Infrastructure` | Centralized developer tooling hub enforcing strict XDG Base Directory compliance and hermetic CI/CD quality gates. |
+
+---
+
+### 🛠️ Technical Competency Matrix
+
+* **Systems & Languages:** Go, Native JavaScript (Node.js runtime primitives), POSIX Shell Scripting, GNU Make.
+* **Cryptography & SecOps:** AES-256-GCM (AEAD), scrypt (RFC 7914), HMAC-SHA256, CSPRNG stream generation, CSPRNG heredoc isolation.
+* **Infrastructure & CI/CD:** Docker containerization, systemd daemons, GitHub Actions CI/CD matrix optimization, CodeQL security auditing, OpenSSF scorecard compliance.
+* **Code Quality & Governance:** Strict zero external runtime dependencies, explicit memory hygiene, atomic filesystem operations, POSIX 0600 permission enforcement.
+
+---
+
+<div align="center">
+  <i>"Simplicity is prerequisite for reliability. Zero dependencies mean zero supply-chain attack vectors."</i>
+</div>
